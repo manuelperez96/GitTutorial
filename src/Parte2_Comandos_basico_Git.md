@@ -97,3 +97,18 @@ En la tercera línea, cuando se realizó.
 
 Y por último, un mensaje que el autor le dio al commit.
 
+## git show
+Muestra información sobre un tag, commit, tree, etc., de forma descriptiva.
+
+Si no le pasamos sobre qué queremos obtener la información, nos devuelve la información de donde esté HEAD en este momento.
+
+El formato o la información que muestra, dependerá del tipo de dato que le hayamos pasado al comando, por lo que recomiendo, leer la [documentación](https://git-scm.com/docs/git-show) para más información.
+
+## git diff
+Este comando nos permite comparar diferentes **versiones** de un repositorio. Para ello nos hará falta el identificador de la versión, que podemos obtener a través del comando git log, por ejemplo.
+
+El comando recibe dos referencias, debemos pasarle como primera referencia la más vieja, para que nos muestre los cambios en el orden correcto.
+
+```shell
+git diff ref1 ref2
+```
