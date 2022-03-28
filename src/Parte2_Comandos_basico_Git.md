@@ -34,6 +34,7 @@ git rm nombre_archivo.txt -f
 # Si solo queremos eliminar el archivo del repositorio de Git
 git rm nombre_archivo.txt --cached
 ```
+Como dato curioso si queremos usar este comando para eliminar un archivo, dicho archivo deberá haber sido añadido al área de stagging con el comando add, previamente.
 
 ## git commit
 Este comando almacena los datos que están en el área de stagging, de forma que creamos una **versión nueva** del fichero y la almacenamos en el repositorio, para poder volver a ella en cualquier momento.
