@@ -19,3 +19,81 @@ git add archivo.txt
 # y de los directorios internos.
 git add .
 ```
+##git rm
+Este comando nos permite eliminar archivos del disco duro o del área de stagging. Es importante usarlo con cuidado. El qué elimine dependerá de los parámetros que usemos con el comando.
+
+Puede ser útil cuando hemos hecho un add de un archivo o archivos, que realmente no queríamos guardar.
+
+```shell
+# Elimina el archivo del disco y del repositorio de git
+git rm nombre_archivo.txt
+
+# A veces es necesario forzar la eliminación.
+git rm nombre_archivo.txt -f
+
+# Si solo queremos eliminar el archivo del repositorio de Git
+git rm nombre_archivo.txt --cached
+```
+
+## git commit
+Este comando almacena los datos que están en el área de stagging, de forma que creamos una **versión nueva** del fichero y la almacenamos en el repositorio, para poder volver a ella en cualquier momento.
+
+``` shell
+# Creamos un commit y le añadimos un mensaje al mismo.
+git commit -m "mensaje descriptivo"
+
+# Traqueamos todos los cambios realizados y hacemos commit.
+# Es la fusión de add + commit
+git commit -am "mensaje descriptivo"
+```
+
+## git config
+Este comando nos muestra información referente a la configuración de git y el repositorio actual.
+
+Si lo usamos sin parámetros, nos muestra la lista de opciones que le podemos pasar al comando.
+
+```shell
+# Muestra todas las opciones disponibles para el comando
+git config
+
+# Muestra la configuración actual de git 
+git config --list
+
+# Muestra la configuración actual de git y donde están almacenadas
+git config --list --show-origin
+```
+
+Es necesario que configuremos nuestro nombre de usuario e email para Git, sino nos intentará coger el que tenga la máquina por defecto y en caso de no tenerlo, no nos dejará hacer commits.
+
+Dichos datos se pueden configurar de forma global o local para cada repositorio.
+
+```shell
+# Configuración global (para todos los repositorios)
+# del nombre y el email de git.
+git config --global user.name "Nombre Usuario"
+git config --global user.email "nombre@usuario.com"
+
+# Configuración local (para el repositorio actual)
+# del nombre y el email de git.
+git config user.name "Nombre Usuario"
+git config user.email "nombre@usuario.com"
+```
+## git log
+Este comando nos muestra información del repositorio, como por ejemplo, el número de commit realizados, el nombre de dichos commits, etc.
+
+El siguiente código es un ejemplo de cómo se mostraría la información cuando se ejecuta el comando.
+```shell
+commit 5d50de9a1f127b723badcf51c8fe77b5351f6ea5 (HEAD -> master)
+Author: Manuel <perez.soto.manuel@hotmail.com>
+Date:   Sun Mar 27 16:28:56 2022 +0200
+
+    Added first and second part
+```
+En la primera línea, nos encontramos identificador/tag del commit `5d50de9a1f127b723badcf51c8fe77b5351f6ea5`. Luego, `HEAD` que nos dice que nos encontramos actualmente en ese commit (versión del archivo). Por último, el nombre de la rama en la que estamos, `master`.
+
+En la segunda línea, nos encontramos con información sobre el autor del commit.
+
+En la tercera línea, cuando se realizó.
+
+Y por último, un mensaje que el autor le dio al commit.
+
