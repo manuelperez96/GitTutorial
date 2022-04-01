@@ -28,6 +28,9 @@ Hay que tener en cuenta que solo la opción `hard`, modifica los archivos realme
 # Restaura los archivos del directorio de trabajo 
 # a la versión indicada y elimina los commits posteriores.
 git reset --hard identificador
+
+# Esta opción, restaura el proyecto al último commit que exista
+git reset HEAD
 ```
 
 ## git checkout
