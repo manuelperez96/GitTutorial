@@ -43,3 +43,10 @@ branch_master1 -|                                                               
 Algo muy importante a la hora de hacer un merge, es que puede ocurrir un conflicto, por ejemplo, si se ha modificado la rama master y la rama footer y hay código modificado en la misma línea en ambas ramas, git no va a saber qué código es el correcto o cuál quieres mantener.
 
 Para solucionar un conflicto git te da diferentes alternativas como aceptar los cambios de la rama origen, de la rama que se está mergeando o arreglarlo manualmente.
+
+## git branch
+Crea una nueva rama con el nombre que se le pase a git branch.
+
+## git checkout
+Te permite, entre otras cosas, moverte a la rama especificada.
+
