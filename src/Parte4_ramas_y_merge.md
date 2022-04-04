@@ -45,8 +45,19 @@ Algo muy importante a la hora de hacer un merge, es que puede ocurrir un conflic
 Para solucionar un conflicto git te da diferentes alternativas como aceptar los cambios de la rama origen, de la rama que se está mergeando o arreglarlo manualmente.
 
 ## git branch
-Crea una nueva rama con el nombre que se le pase a git branch.
+Este comando permite crear, eliminar y listar ramas.
+
+```shell
+# Lista las ramas si no se le pasa ningún comando
+git branch
+
+# Crea una rama con el nombre especificado
+git branch branch_name
+
+# Elimina una rama
+git branch branch_name
+```
 
 ## git checkout
-Te permite, entre otras cosas, moverte a la rama especificada.
+Este comando te permite, entre otras cosas, moverte a la rama especificada.
 
