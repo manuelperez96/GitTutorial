@@ -54,8 +54,11 @@ git branch
 # Crea una rama con el nombre especificado
 git branch branch_name
 
-# Elimina una rama
-git branch branch_name
+# Elimina una rama, si está completamente mergeada
+git branch -d branch_name
+
+# Elimina una rama, aunque no esté mergeada
+git branch -D branch_name
 ```
 
 ## git checkout
