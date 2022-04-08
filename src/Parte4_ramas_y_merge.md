@@ -64,3 +64,10 @@ git branch -D branch_name
 ## git checkout
 Este comando te permite, entre otras cosas, moverte a la rama especificada.
 
+## git rebase
+Este comando es parecido al git merge, exceptuando que elimina por completo la existencia de la rama con la que nos fusionamos.
+
+Es mala práctica usarlo.
+```shell
+git rebase
+```
