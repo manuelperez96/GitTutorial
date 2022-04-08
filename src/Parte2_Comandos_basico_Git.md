@@ -98,6 +98,15 @@ En la tercera línea, cuando se realizó.
 
 Y por último, un mensaje que el autor le dio al commit.
 
+```shell
+# Muestra información de las diferentes versiones del proyecto 
+# y un indicador visual con las ramas creadas y sus merges.
+git log --graph 
+
+# Muestra información de forma reducida, para que quepa en una línea
+git log --oneline
+```
+
 ## git show
 Muestra información sobre un tag, commit, tree, etc., de forma descriptiva.
 
@@ -113,3 +122,14 @@ El comando recibe dos referencias, debemos pasarle como primera referencia la m�
 ```shell
 git diff ref1 ref2
 ```
+
+## git alias
+Este comando nos permite hacer un alias para un comando con varias opciones. 
+
+Por ejemplo, podemos transformar el siguiente comando `git log --oneline --graph --decorator` en `fullinfo`.
+
+```shell
+git alias fullinfo="git log --oneline --graph --decorator"
+```
+
+para usarlo, bastaría con poner en la consola fullinfo, sin ni siquiera usar la palabra git. 

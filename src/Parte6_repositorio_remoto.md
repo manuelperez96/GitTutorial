@@ -25,4 +25,23 @@ git remote -v
 # en el repositorio local, para no tener que usar la dirección completa
 # cuando necesitemos interactuar con el repositorio remoto.
 git remote add origin repository_address
+
+#Elimina la vinculación con un repositorio remoto.
+git remote rm nombre_remoto
+```
+
+## git pull
+Este comando nos sirve para obtener la información actualizada, si la hubiera, de un repositorio remoto.
+```shell
+# Obtiene la información de un repositorio remoto y la 
+# guarda en el repositorio local.
+git pull origin branch_name
+```
+
+## git push
+Este comando nos sirve para enviar información actualizada, si la hubiera, a un repositorio remoto.
+```shell
+# Manda la información de la rama indicada a una rama con el mismo nombre 
+# en el origen.
+git push origin branch_name
 ```
