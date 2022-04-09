@@ -46,6 +46,11 @@ git commit -m "mensaje descriptivo"
 # Traqueamos todos los cambios realizados y hacemos commit.
 # Es la fusión de add + commit
 git commit -am "mensaje descriptivo"
+
+# Con este comando fusionamos el commit actual con el anterior,
+# de forma que en el anterior commit se añaden todos los cambios 
+# realizados en los dos commits.
+git commit --amend
 ```
 
 ## git config
